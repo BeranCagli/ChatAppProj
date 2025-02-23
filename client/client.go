@@ -1,4 +1,4 @@
-package main // ✅ Make sure this is the first line!
+package main 
 
 import (
 	"bufio"
@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-func main() { // ✅ Make sure this function exists!
+func main() {
 	conn, err := net.Dial("tcp", "localhost:8080")
 	if err != nil {
 		fmt.Println("Error connecting to server:", err)
